@@ -71,9 +71,9 @@ class TestSelectOldestBearAndReturnNameAndAge:
     def test_selects_oldest_bear_and_returns_name_and_age(self):
         '''selects the oldest bear and returns its name and age.'''
         result = cursor.execute(select_oldest_bear_and_returns_name_and_age)
-        assert(result.fetchall() == [
-            ("Mr. Chocolate", 20,),
-        ])
+        assert(result.fetchall() == 
+            [('Mr. Chocolate', 20)]
+        )
 
 class TestSelectYoungestBearAndReturnNameAndAge:
     '''select_youngest_bear_and_returns_name_and_age in sql_queries.py'''
